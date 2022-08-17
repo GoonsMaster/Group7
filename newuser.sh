@@ -5,7 +5,7 @@
 #date           :08162022
 #version        :1.0
 #usage          :./newuser.sh
-#notes          : 
+#notes          : The contemplated use case for this script is assisting with a new member of your team/organization. Standard Open Source License granted.
 #bash_version   :5.1.16(1)-release
 #============================================================================
 
@@ -45,11 +45,11 @@ if [[ $firstName =~ ^[a-zA-Z]+$ ]]
 
 then
 
-#v Should the statement return true the a file is created
+#v Should the statement return true then a file is created
 printf "$firstName 's Profile \nFirst Name: $firstName" > ~/Desktop/$firstName"_HRProfile.txt"
 else
 
-# Should the statement return false the user will be prompted again
+# Should the statement return false then user will be prompted again
 #Note this prompt only occurs once and currently has no verification.
 #Thus errors can still be entered.
 #v
